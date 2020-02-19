@@ -21,10 +21,18 @@ RUN set -eux; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
 		bison \
+		autoconf \
+		build-essential \
+		libyaml-dev \
+		libreadline6-dev \
+		zlib1g-dev \
+		libncurses5-dev \
+		libffi-dev \
 		dpkg-dev \
 		libgdbm-dev \
 		ruby \
 		libjemalloc-dev \
+		libssl1.0-dev \
 	; \
 	rm -rf /var/lib/apt/lists/*; \
 	\
